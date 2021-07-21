@@ -33,10 +33,8 @@ MD5("1<PRIVATE_KEY><PUBLIC_KEY>")
 There is also a helper script called ```secret_creator.sh``` that will help you create the ```.secrets``` file. Just run  ```sh secret_creator.sh``` from terminal and the script will ask you for your public key and then your hash and then the file will be created.
   
 - Don't forget to re-sync gradle!  
-<br/>
 
 - The app should be ready to build and run!
-<br/>
 
 - You will see the following error dialogs when you have entered client secrets that are blank (image #1) or incorrect (image #2) <br/>
 <img src="./screenshots/screenshot_no_secrets.png" width="300" /> <img src="./screenshots/screenshot_unauthorized.png" width="300" /> 
