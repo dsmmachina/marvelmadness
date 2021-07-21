@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Marvel Madness</string>
+
+    <string name="menu_title_comics">Comics</string>
+    <string name="menu_title_characters">Characters</string>
+    <string name="menu_title_creators">Creators</string>
+
+    <string name="characters_label">Characters</string>
+
+    <string name="error_title">Oops!</string>
+    <string name="error_button_title">OK</string>
+    <string name="error_unknown_reason">An unknown error occurred</string>
+    <string name="error_client_secrets">Please add client secrets before attempting to connect</string>
+
+</resources>

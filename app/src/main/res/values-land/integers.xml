@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- the speed that we want the fragment animation to run at -->
+    <integer name="fragment_animation_duration">300</integer>
+
+</resources>

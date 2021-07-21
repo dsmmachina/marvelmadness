@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- the max number of lines for the comic name  -->
+    <integer name="item_comic_name_max_lines">2</integer>
+
+    <!-- the speed that we want the fragment animation to run at -->
+    <integer name="fragment_animation_duration">250</integer>
+
+</resources>

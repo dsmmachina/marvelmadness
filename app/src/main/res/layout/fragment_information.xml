@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="InformationFragmentBinding">
+        <import type="android.view.View"/>
+        <variable name="title" type="String" />
+        <variable name="issue" type="String" />
+        <variable name="creators" type="String" />
+        <variable name="description" type="String" />
+        <variable name="hasCharacters" type="Boolean" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/information_fragment_content_color">
+
+
+        <RelativeLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@drawable/squared_edges_white">
+
+
+            <ImageView
+                android:id="@+id/closeButton"
+                android:layout_width="@dimen/information_content_button_width"
+                android:layout_height="@dimen/information_content_button_height"
+                android:layout_marginTop="@dimen/information_content_button_margin"
+                android:layout_marginEnd="@dimen/information_content_button_margin"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:backgroundTint="@color/black"
+                android:background="@android:drawable/ic_menu_close_clear_cancel"/>
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@id/closeButton"
+                android:layout_toStartOf="@id/closeButton"
+                android:layout_marginStart="@dimen/information_content_title_margin"
+                android:layout_marginEnd="@dimen/information_content_title_margin"
+                android:textStyle="bold"
+                android:textSize="@dimen/information_content_title_size"
+                android:textColor="@color/black"
+                android:text="@{ title }"/>
+
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titleTextView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/information_content_issue_margin_top"
+                        android:layout_marginEnd="@dimen/information_content_issue_margin"
+                        android:layout_marginStart="@dimen/information_content_issue_margin"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/information_content_issue_size"
+                        android:text="@{ issue }"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/information_content_creators_margin_top"
+                        android:layout_marginEnd="@dimen/information_content_creators_margin"
+                        android:layout_marginStart="@dimen/information_content_creators_margin"
+                        android:textSize="@dimen/information_content_creators_size"
+                        android:textStyle="italic"
+                        android:textColor="@color/red"
+                        android:text="@{ creators }"/>
+
+                    <ImageView
+                        android:id="@+id/thumbnail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/information_content_thumbnail_margin_top"
+                        android:scaleType="centerCrop" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/information_content_description_margin"
+                        android:layout_marginEnd="@dimen/information_content_description_margin"
+                        android:layout_marginStart="@dimen/information_content_description_margin"
+                        android:layout_marginBottom="@dimen/information_content_description_margin_bottom"
+                        android:textSize="@dimen/information_content_description_size"
+                        android:textStyle="italic"
+                        android:textColor="@color/black"
+                        android:text="@{ description }"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/information_content_characters_margin_top"
+                        android:layout_marginStart="@dimen/information_content_characters_margin_start"
+                        android:textSize="@dimen/information_content_characters_size"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:text="@string/characters_label"
+                        android:visibility="@{ hasCharacters ? View.VISIBLE : View.GONE, default=gone }"/>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/information_content_hscroll_height"
+                        android:layout_marginTop="@dimen/information_content_hscroll_margin_top"
+                        android:visibility="@{ hasCharacters ? View.VISIBLE : View.GONE, default=gone }">
+                        <LinearLayout
+                            android:id="@+id/characterScrollViewLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"/>
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

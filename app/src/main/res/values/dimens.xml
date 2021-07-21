@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Item - Comic -->
+    <dimen name="item_comic_root_padding">10dp</dimen>
+    <dimen name="item_comic_root_margin">10dp</dimen>
+
+    <dimen name="item_comic_elevation">6dp</dimen>
+    <dimen name="item_comic_translation_z">6dp</dimen>
+
+    <dimen name="item_comic_thumbnail_height">180dp</dimen>
+
+    <dimen name="item_comic_name_text_size">12sp</dimen>
+    <dimen name="item_comic_name_margin">10dp</dimen>
+
+    <dimen name="item_comic_issue_text_size">12sp</dimen>
+    <dimen name="item_comic_issue_margin">10dp</dimen>
+    <dimen name="item_comic_issue_margin_top">2dp</dimen>
+
+
+    <!-- information fragment -->
+    <dimen name="information_content_height">400dp</dimen>
+
+    <dimen name="information_content_button_width">24dp</dimen>
+    <dimen name="information_content_button_height">24dp</dimen>
+    <dimen name="information_content_button_margin">16dp</dimen>
+
+    <dimen name="information_content_title_margin">16dp</dimen>
+    <dimen name="information_content_title_size">17sp</dimen>
+
+    <dimen name="information_content_issue_margin">16dp</dimen>
+    <dimen name="information_content_issue_margin_top">5dp</dimen>
+    <dimen name="information_content_issue_size">15sp</dimen>
+
+    <dimen name="information_content_creators_margin">16dp</dimen>
+    <dimen name="information_content_creators_margin_top">3dp</dimen>
+    <dimen name="information_content_creators_size">12sp</dimen>
+
+    <dimen name="information_content_thumbnail_margin_top">24dp</dimen>
+
+    <dimen name="information_content_description_margin">16dp</dimen>
+    <dimen name="information_content_description_margin_bottom">5dp</dimen>
+    <dimen name="information_content_description_size">12sp</dimen>
+
+    <dimen name="information_content_characters_margin_top">10dp</dimen>
+    <dimen name="information_content_characters_margin_start">16dp</dimen>
+    <dimen name="information_content_characters_size">13sp</dimen>
+
+    <dimen name="information_content_hscroll_height">150dp</dimen>
+    <dimen name="information_content_hscroll_margin_top">10dp</dimen>
+
+
+    <!-- characters -->
+    <dimen name="item_character_padding">10dp</dimen>
+    <dimen name="item_character_elevation">6dp</dimen>
+    <dimen name="item_character_translation_z">6dp</dimen>
+
+    <dimen name="item_character_content_width">150dp</dimen>
+    <dimen name="item_character_content_thumbnail_height">100dp</dimen>
+    <dimen name="item_character_content_name_size">9sp</dimen>
+
+</resources>

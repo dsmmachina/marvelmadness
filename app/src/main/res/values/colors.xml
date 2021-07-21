@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red">#d32f2f</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="battleship">#33000000</color>
+    <color name="grey">#343434</color>
+
+    <color name="main_activity_bg_color">#565656</color>
+    <color name="information_fragment_content_color">#bb000000</color>
+</resources>
